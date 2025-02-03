@@ -71,7 +71,7 @@ Want to deploy FlowChat? You can deploy it for free on **Render, Vercel, or Netl
 
 ## **📷 Screenshots**  
 
-![Chat UI Preview](http://localhost:4500/1738594925880.png)  
+![Chat UI Preview](https://github.com/viksitt/Flowchat/blob/main/Screenshot%202025-02-03%20215754.png)  
 
 ---
 
