@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
-}
+/* Reset default margin, padding, and borders */  
+* {  
+  margin: 0;  
+  /* padding: 0;  
+  border: 0; */  
+}  
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Media query for devices with aspect ratio of 7:10 */  
+@media (max-aspect-ratio: 7/10) {  
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  /* Join Container */  
+  .joincontainer {  
+    margin-top: 30vw !important;  
+    width: 100% !important;  
+  }  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  /* Join Page */  
+  .joinpage {  
+    display: flex;  
+    justify-content: center;  
+    align-items: flex-start !important;  
+  }  
 
-.App-link {
-  color: #61dafb;
-}
+  /* Adjust join container for mobile devices */  
+   
+  /* Join Container Image */  
+  .joincontainer > img {  
+    width: 20vw !important;  
+  }  
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  /* Join Container Heading */  
+  .joincontainer > h1 {  
+    font-size: 6vw !important;  
+    width: 65vw !important;  
+    border-bottom: 0.6vw solid white !important;  
+    padding: 3vw !important;  
+  }  
+
+  /* Input Field for Join */  
+  #inputjoin {  
+    width: 55vw !important;  
+    padding: 4vw !important;  
+    font-size: 5vw !important;  
+    margin: 5vw !important;  
+  }  
+
+  /* Join Button */  
+  .joinbtn {  
+    width: 55vw !important;  
+    padding: 4vw !important;  
+    font-size: 5vw !important;  
+    margin: 1vw !important;  
+  }  
+
+  /* Chat Container */  
+  .chatcont {  
+    background-color: white; /* Set background color to white */  
+    height: 100% !important;  
+    width: 100% !important;  
+  }  
+
+  /* Chat Header */  
+  .chathead {  
+    height: 10% !important;  
+  }  
+
+  .chathead > h2 {  
+    margin: 8vw !important;  
+    font-size: 9vw !important;  
+  }  
+
+  .chathead img {  
+    margin: 4vw !important;  
+    transform: scale(2) !important;  
+  }  
+
+  .chathead > img:hover {  
+    transform: scale(3.2) !important;  
+  }  
+
+  /* Chat Box */  
+  .chatbox {  
+    height: 80% !important;  
+  }  
+
+  /* Input Box */  
+  .inputbox {  
+    height: 10% !important;  
+  }  
+
+  /* Chat Input Field */  
+  #chatinput {  
+    padding: 4vw !important;  
+    font-size: 4.5vw !important;  
+    
+  }  
+
+  /* Message Box */  
+  .messagebox {  
+    padding: 3vw !important;  
+    margin: 3vw !important;  
+    border-radius: 1.5vw !important;  
+    font-size: 4vw !important;  
+  }  
+}  
+
+/* Other styles */  
+
+.uploadbtn {  
+  background: none;  
+  border: none;  
+  cursor: pointer;  
+  margin-left: 2vw; /* Adjust margin to be responsive */  
+}  
+
+.uploadbtn img {  
+  width: 5vw; /* Adjust the width relative to the viewport width */  
+  height: 5vw; /* Adjust the height to maintain aspect ratio */  
+  max-width: 20px; /* Set a max-width to avoid excessive enlargement */  
+  max-height: 20px; /* Set a max-height to avoid excessive enlargement */  
+}  
+
+/* Media Query for Small Screens (Mobile) */  
+@media (max-width: 600px) {  
+  .uploadbtn img {  
+    width: 10vw; /* Increase the size of the icon on smaller screens */  
+    height: 10vw;  
+  }  
+}  
+
+/* Media Query for Larger Screens (Tablet and Desktop) */  
+@media (min-width: 600px) and (max-width: 1024px) {  
+  .uploadbtn img {  
+    width: 6vw; /* Adjust the size for tablet */  
+    height: 6vw;  
+  }  
+}  
+

@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import socketio from 'socket.io-client';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Join from './component/join/Join.js'; // Ensure the component is correctly imported
+import Chat from './component/chat/Chat.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Join />} />
+          <Route path="/chat" element={<Chat />} />
+
+        </Routes>
+      </Router>
     </div>
   );
 }
 
 export default App;
+

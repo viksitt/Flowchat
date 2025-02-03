@@ -1,0 +1,107 @@
+.chatpage{
+    background-color: rgb(4, 17, 67);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.chathead {
+    position: relative;
+    background-color: #3652eb;
+    height: 15%;
+    border-radius: 3px;
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Centers vertically */
+    justify-content: center; /* Centers horizontally */
+}
+
+.chathead > h2 {
+    color: white;
+    margin: 0; 
+    font-style: oblique;
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.chathead  img {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    width: 1.7vmax; 
+    height: 1.7vmax;
+    filter: invert() brightness(100%);
+    cursor: pointer; 
+    transition: all 0.3s;
+}
+.chathead img:hover{
+    transform: scale(1.2);
+}
+
+.chatcont{
+    background-color:#e0e4fc;
+    height: 60%;
+    width: 50%;
+    border-radius: 5px;
+}
+.inputbox{
+    border:0.1vmax solid  #3652eb  ;
+    background-color: white;
+    height: 15%;
+    /* border-radius: 5px; */
+    display: flex;
+    
+    
+
+}
+.chatbox{
+    /* border: 0.2vmax solid #B1C5CF; */
+    height: 70%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+}
+#chatinput{
+    width: 90%;
+    border:none;
+    padding: 2vmax;
+    box-sizing: border-box;
+    outline: none;
+    font-size:1vmax ;
+    border-radius: 5px;
+    
+}
+.sendbtn{
+    background-color: #68e7b8;
+    width: 20%;
+   border: none ;
+   cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 3px;
+
+}
+.sendbtn:hover{
+    background-color: #05e299;
+}
+.sendbtn>img{
+   width: 2.5vmax; 
+   filter:brightness(100) invert();
+   transform: all 0.3s;
+}
+.sendbtn:hover img{
+    transform: translate3d(10px);
+}
+.uploadbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 6px;
+    
+}
+
+.uploadbtn img {
+    width: 40px;
+    height: 40px;
+   
+}
+
